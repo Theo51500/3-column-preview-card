@@ -23,7 +23,7 @@ body {
 .container {
     display: flex;
     width: 870px;
-    height: 470px;
+    min-height: 470px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -94,6 +94,15 @@ body {
     .container {
         flex-direction: column;
         width: 300px;
-        height: min-content;
+        overflow: auto;
+    }
+
+    .container .cards .button-card {
+        margin-top: 20px;
+        position: initial;
+    }
+
+    .container .cards .text-card {
+        font-size: 0.8rem;
     }
   }
